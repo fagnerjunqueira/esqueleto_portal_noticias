@@ -100,3 +100,73 @@ aside .noticia {
     column-gap: 1%;
     row-gap: 5%;
 }
+
+@media screen and (max-width: 767px) {
+    .conteudo {
+        display: block;
+    }
+    
+    .container {
+        max-width: 90%;
+    }
+
+    .destaque .noticia a {
+        display: block;
+        font-size: 1.5em;
+    }
+
+    .destaque .noticia img {
+        margin-right: 0;
+    }
+
+    .noticias {
+        display: block;
+        grid-template-columns: repeat(3, 32.66%);
+        column-gap: 1%;
+        row-gap: 5%;
+    }
+
+    .noticias .noticia {
+        margin-bottom: 32px;
+    }
+
+    aside {
+        padding-left: 0;
+    }
+
+    header div.container {
+        flex-direction: column;
+    }
+
+    .submenu {
+        width: 100%;
+        position: relative;
+        border: none;
+        top: 0;
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu, .submenu {
+        display: block;
+    }
+
+    .menu > li {
+        clear: both;
+        display: block;
+        padding: 8px;
+    }
+
+    .botao-menu {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+    }
+
+    .botao-menu button {
+        padding: 8px;
+    }
+}

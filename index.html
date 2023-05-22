@@ -19,6 +19,9 @@
                 <button type="submit">Pesquisar</button>
             </form>
         </div>
+        <div class="botao-menu">
+            <button type="button">Abrir menu</button>
+        </div>
         <nav class="container">
             <ul class="menu">
                 <li>Esportes
@@ -98,5 +101,13 @@
             </section>
         </aside>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('.botao-menu button').click(function(){
+                $('.menu').slideToggle();
+            })
+        })
+    </script>
 </body>
 </html>
