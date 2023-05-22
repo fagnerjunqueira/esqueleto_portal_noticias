@@ -101,6 +101,16 @@ aside .noticia {
     row-gap: 5%;
 }
 
+@media screen and (min-width: 767px) {
+    .botao-menu {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .conteudo {
         display: block;
